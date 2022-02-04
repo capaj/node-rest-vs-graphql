@@ -7,13 +7,12 @@ generator client {
     provider = "prisma-client-js"
 }
 
-generator PrismaTypeGraphQLTypesGenerator {
-    provider                       = "npx prisma-typegraphql-types-generator"
-    modelsOutput                   = "./models/generated"
-    enumsOutput                    = "./models/types"
-    removeTypeInFieldDecorator     = true
-    splitScalarAndObjectTypeFields = true
-    exportedNameSuffix             = "GQL"
+generator zod {
+    provider      = "zod-prisma"
+    output        = "./zod-schemas"
+    relationModel = "default"
+    modelCase     = "PascalCase"
+    modelSuffix   = "Model"
 }
 
 model Blogpost {
@@ -25,4 +24,3 @@ model Blogpost {
     body        String
     author      String?
 }
-

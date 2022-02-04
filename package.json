@@ -25,15 +25,15 @@
     "@prisma/client": "^3.9.1",
     "dotenv": "^16.0.0",
     "fastify": "^3.27.1",
-    "graphql": "^15",
-    "mercurius": "^8",
+    "fastify-swagger": "^4.13.1",
+    "fastify-zod": "^0.0.2",
     "pino-pretty": "^7.5.1",
     "prisma": "^3.9.1",
-    "reflect-metadata": "^0.1.13",
-    "type-graphql": "^1.1.1"
+    "zod": "^3.11.6",
+    "zod-prisma": "^0.5.4",
+    "zod-to-json-schema": "^3.11.3"
   },
   "devDependencies": {
-    "prisma-typegraphql-types-generator": "^1.5.11",
     "typescript": "^4.5.5"
   }
 }
