@@ -1,0 +1,39 @@
+{
+  "name": "rest-vs-graphql",
+  "version": "1.0.0",
+  "description": "comparison of two implementations of the same API using REST and Graphql",
+  "main": "server.ts",
+  "scripts": {
+    "test": "vitest",
+    "dev": "tsnd server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/capaj/node-rest-vs-graphql.git"
+  },
+  "keywords": [
+    "graphql",
+    "rest"
+  ],
+  "author": "capajj@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/capaj/node-rest-vs-graphql/issues"
+  },
+  "homepage": "https://github.com/capaj/node-rest-vs-graphql#readme",
+  "dependencies": {
+    "@prisma/client": "^3.9.1",
+    "dotenv": "^16.0.0",
+    "fastify": "^3.27.1",
+    "graphql": "^15",
+    "mercurius": "^8",
+    "pino-pretty": "^7.5.1",
+    "prisma": "^3.9.1",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^1.1.1"
+  },
+  "devDependencies": {
+    "prisma-typegraphql-types-generator": "^1.5.11",
+    "typescript": "^4.5.5"
+  }
+}
