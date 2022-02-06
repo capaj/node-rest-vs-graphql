@@ -25,7 +25,7 @@ export class RootResolver {
   }
 
   @Mutation(() => BlogpostMutation)
-  @Query(() => BlogpostGQL)
+  @Query(() => BlogpostGQL, { nullable: true })
   async blogpost(
     @Arg('id', () => GraphQLInt, { nullable: false })
     id: number
