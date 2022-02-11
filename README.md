@@ -11,9 +11,9 @@ Both branches have the same CRUD functionality over a single db table:
 - mutation to create a new post, update existing one and delete a blogpost
 
 Graphql schema is built using typegraphql, but other frameworks are similar in verbosity.
-
-For REST, we have swagger docs:
+For both we have a tool for playground+documentation: 
+- in REST, we have swagger docs:
 ![picture 1](images/a33d5b927105e24a9fb73b51ecd97c2c0c3243a53aea9beadaecfade7cae9fcb.png)
 
-For graphiql we have graphiql bundled with mercurius:
+ - graphql has graphiql bundled with mercurius:
 ![picture 1](images/7bd100537378974ff6331eb1f9ebfb3e759fb95e59724899c9594093c7d5c217.png)
