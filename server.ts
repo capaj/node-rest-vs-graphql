@@ -1,6 +1,5 @@
+import { apiRoutes } from './apiRoutes'
 import Fastify from 'fastify'
-import { gqlSchema } from './gqlSchema'
-import mercurius from 'mercurius'
 
 const app = Fastify({
   logger: {
@@ -10,10 +9,6 @@ const app = Fastify({
     }
   }
 })
-
-app.register(mercurius, {
-  schema: gqlSchema,
-  graphiql: true
-})
+app.register(apiRoutes, { prefix: '/api/v1' })
 
 app.listen(process.env.PORT || 3000)
